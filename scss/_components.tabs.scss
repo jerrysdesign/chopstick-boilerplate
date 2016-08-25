@@ -1,0 +1,67 @@
+/*
+    Component: Tabs
+    ---
+    Tabbing through several parts of content
+*/
+
+.c-tabs {
+    @include margin-tb(0,1);
+}
+
+.c-tabs__nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @include clearfix();
+}
+
+.c-tabs__nav__item {
+  float: left;
+  margin-right: 8px;
+  background: darken(hsl(hue(#0997b2),25,95), 5%);
+  border-radius: $radius $radius 0 0;
+  overflow: hidden;
+
+  > a {
+    display: block;
+    border: 0;
+    // color: $alpha-text-color;
+    @include text-dimensions($ms-1,1);
+    @include padding-lr(1,1);
+    @include padding-tb(.75,.75);
+  }
+
+  &:hover {
+      background: darken(hsl(hue(#0997b2),25,95), 3%);
+  }
+
+  &.is-selected {
+    > a {
+      background: #eee;
+      color: #0997b2;;
+      font-weight: bold;
+    }
+  }
+}
+
+.c-tabs__content {
+  background: #eee;
+  border-radius: 0 $radius $radius $radius;
+  box-shadow: 0 5px 8px rgba(hsl(hue(#0997b2),10,45),.1);
+}
+
+.c-tabs__content__pane {
+  display: none;
+  @include padding-lr(1,1);
+  @include padding-tb(1,1);
+
+  &.is-active {
+    display: block;
+  }
+}
+  // Reset bottom margins on children
+  .c-tabs__content__pane > *:last-child,
+  .c-tabs__content__pane > *:last-child > *:last-child,
+  .c-tabs__content__pane > *:last-child > *:last-child > *:last-child {
+    margin-bottom: 0;
+  }

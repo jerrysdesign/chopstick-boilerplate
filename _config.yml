@@ -16,6 +16,8 @@ navigation:
     url: /styleguide.html
   - title: grid
     url: /grid.html
+  - title: javascript
+    url: /javascript.html
 
 # Exclude these files from the build process
 exclude: ['_site','scss','*scss','Gem*','Guard*','*rb','.sass-cache','.git*','config.rb','*.md','*.json','docroot','node_modules','gulpfile.js','install.sh','lint.yml']

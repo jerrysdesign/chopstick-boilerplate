@@ -43,6 +43,15 @@ module.exports = {
         jsDest: path + 'js/'
     },
 
+    requirejs: {
+        src : [  // source js file
+          path + 'js/app/*.js'
+        ],
+        concatFilename: 'require.concat.js', // result filename
+        jekyllJsDest: path + '_site/js/',
+        jsDest: path + 'js/'
+    },
+
     jekyll: {
         buildMessage: '<span style="color: grey">Building</span> jekyll'
     },

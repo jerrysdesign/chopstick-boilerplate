@@ -11,4 +11,5 @@ gulp.task('default', [
     'scss',
     'js',
     'jekyll--build'
+    //'requirejs'
 ]);

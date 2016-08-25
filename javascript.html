@@ -1,0 +1,71 @@
+---
+layout: default
+title: Javascript Modules
+section: javascript
+---
+<div class="c-row c-row--alpha">
+    <div class="o-container">
+        <div class="c-section">
+            <h2 class="c-section-title">Modal</h2>
+
+            <div class="o-grid o-grid--gutter">
+                <div class="o-grid__item u-2-of-3-bp4">
+                    {% include components.modal.html %}
+                </div>
+                <div class="o-grid__item u-1-of-3-bp4">
+                    <pre class="c-scss">components.modal.html</pre>
+                    <button class="c-toggle js-show-hide" data-target-selector=".js-snippet-modal">
+                        <i class="c-icon c-icon--toggle"></i>HTML snippet
+                    </button>
+                    <div class="js-snippet-modal is-hidden">
+                        {% highlight html linenos=table %}
+                            {% include components.modal.html %}
+                        {% endhighlight %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-section">
+            <h2 class="c-section-title">Toggle</h2>
+
+            <div class="o-grid o-grid--gutter">
+                <div class="o-grid__item u-2-of-3-bp4">
+                    {% include components.toggle.html %}
+                </div>
+                <div class="o-grid__item u-1-of-3-bp4">
+                    <pre class="c-scss">components.toggle.html</pre>
+                    <button class="c-toggle js-show-hide" data-target-selector=".js-snippet-toggle">
+                        <i class="c-icon c-icon--toggle"></i>HTML snippet
+                    </button>
+                    <div class="js-snippet-toggle is-hidden">
+                        {% highlight html linenos=table %}
+                            {% include components.toggle.html %}
+                        {% endhighlight %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-section">
+            <h2 class="c-section-title">Tabs</h2>
+
+            <div class="o-grid o-grid--gutter">
+                <div class="o-grid__item u-2-of-3-bp4">
+                    {% include components.tabs.html %}
+                </div>
+                <div class="o-grid__item u-1-of-3-bp4">
+                    <pre class="c-scss">components.tabs.html</pre>
+                    <button class="c-toggle js-show-hide" data-target-selector=".js-snippet-tabs">
+                        <i class="c-icon c-icon--toggle"></i>HTML snippet
+                    </button>
+                    <div class="js-snippet-tabs is-hidden">
+                        {% highlight html linenos=table %}
+                            {% include components.tabs.html %}
+                        {% endhighlight %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

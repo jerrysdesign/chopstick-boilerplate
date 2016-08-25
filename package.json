@@ -22,5 +22,8 @@
     "gulp-svg2png": "1.0.0",
     "gulp-uglyfly": "1.4.2",
     "require-dir": "0.3.0"
+  },
+  "dependencies": {
+    "gulp-requirejs-optimize": "1.2.0"
   }
 }
